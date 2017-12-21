@@ -1,0 +1,73 @@
+.token-keyword1 {
+    -fx-fill: #99FFCC;
+}
+.token-keyword2 {
+    -fx-fill: #33FFFF;
+}
+.token-keyword3 {
+    -fx-fill: #FF9966;
+}
+
+.token-comment-normal {
+    -fx-fill: #CCCCCC;
+}
+.token-comment-javadoc {
+    -fx-fill: #FFFF66;
+}
+.token-comment-standout {
+    -fx-fill: #11FF44;
+}
+
+.token-primitive {
+    -fx-fill: #FFFFFF;
+}
+.token-string-literal {
+    -fx-fill: #FF99FF;
+}
+.token-label {
+    -fx-fill: #FF99FF;
+}
+.token-invalid {
+    -fx-fill: #0xFFFFFF;
+}
+/* Default text colour */
+.token-default {
+    -fx-fill: white;
+}
+
+.scope-colors {
+    -bj-background-color: black;
+
+    -bj-class-color: rgb(60, 7, 30);
+    -bj-class-outer-color: rgb(67, 37, 67);
+    -bj-class-inner-color: rgb(45, 25, 45);
+
+    -bj-method-color: rgb(5, 5, 75);
+    -bj-method-outer-color: rgb(40, 40, 50);
+
+    -bj-selection-color: rgb(22, 22, 7);
+    -bj-selection-outer-color: rgb(67, 67, 45);
+
+    -bj-iteration-color: rgb(7, 22, 7);
+    -bj-iteration-outer-color: rgb(45, 78, 45);
+
+    -bj-breakpoint-overlay-color: rgba(55, 235, 235, 0.6);
+    -bj-step-overlay-color: rgba(235, 115, 235, 0.6);
+}
+
+.moe-step-mark-icon {
+    -fx-fill: rgb(235, 115, 235);
+    -fx-stroke: white;
+}
+
+.moe-editor-pane {
+    -fx-background-color: black; // outside of class body
+    -fx-highlight-fill: hsb(150, 60%, 40%); // highlight on mouse drag
+}
+
+.moe-find-result {
+    -rtfx-background-color: hsb(211, 20%, 99%); // not sure what this does... ctrl+f highlighting is managed by -fx-highlight-fill
+}
+.moe-editor-pane .caret {
+   -fx-stroke: rgb(255, 200, 200);
+}
