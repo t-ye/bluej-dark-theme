@@ -1,15 +1,15 @@
 .token-keyword1 {
-    -fx-fill: #99FFCC;
+    -fx-fill: #FF00FF; /* Green */
 }
 .token-keyword2 {
-    -fx-fill: #33FFFF;
+    -fx-fill: #0300e5;
 }
 .token-keyword3 {
-    -fx-fill: #FF9966;
+    -fx-fill: #f4511e;
 }
 
 .token-comment-normal {
-    -fx-fill: #CCCCCC;
+    -fx-fill: #FF0000;
 }
 .token-comment-javadoc {
     -fx-fill: #FFFF66;
@@ -22,17 +22,17 @@
     -fx-fill: #FFFFFF;
 }
 .token-string-literal {
-    -fx-fill: #FF99FF;
+    -fx-fill: #FFFF00;
 }
 .token-label {
-    -fx-fill: #FF99FF;
+    -fx-fill: #ff38ff;
 }
 .token-invalid {
-    -fx-fill: #0xFFFFFF;
+    -fx-fill: #FFFFFF;
 }
 /* Default text colour */
 .token-default {
-    -fx-fill: white;
+    -fx-fill: lightgrey;
 }
 
 .scope-colors {

@@ -10,7 +10,7 @@
     -fx-fill: limegreen;
 }
 .terminal-input {
-    -fx-fill: blue;
+    -fx-fill: #3d3dff;
 }
 .terminal-method-record {
     -fx-fill: orangered;
