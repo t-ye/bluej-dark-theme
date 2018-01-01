@@ -1,6 +1,6 @@
 .moe-top-bar {
     -fx-padding: 0.75em 1em 0.75em 1em;
-    -fx-background-color: hsb(0, 0%, 50%), rgb(225, 225, 225);
+    -fx-background-color: DarkSlateGray ;
     -fx-background-insets: 0 0 0 0, 0 0 1 0;
 }
 .moe-top-bar-buttons {
@@ -12,7 +12,7 @@
     -fx-label-padding: 0 0.3em 0 0.3em;
 }
 .moe-bottom-bar {
-    -fx-background-color: hsb(0, 0%, 50%), rgb(225, 225, 225);
+    -fx-background-color: DarkSlateGray ;
     -fx-background-insets: 0 0 0 0, 1 0 0 0;
 }
 .moe-bottom-status-row {
@@ -76,12 +76,23 @@
     -fx-alignment: center-right;
     -fx-graphic-text-gap: 0;
     -fx-label-padding: 0 2 0 0;
-    -fx-background-color: gray, rgb(255, 255, 255);
+    -fx-background-color: DarkSlateGray;
+    -fx-text-fill: white;
     /* Note there is an inset of 3 pixels to right of this item,
       but it's added in code */
 }
+/* Since lines can wrap when printing, move line numbers to top
+   alignment, otherwise they can get centered between the two parts
+   of the wrapped line, which looks weird: */
+.moe-editor-pane:bj-printing:bj-line-numbers .moe-line-label {
+    -fx-alignment: top-right;
+    -fx-label-padding: 4 2 0 0;
+}
 .moe-line-label:bj-odd {
-    /* -fx-background-color: rgb(245, 245, 245); */
+    -fx-background-color: #4F6F6F
+}
+.moe-editor-pane:bj-printing:bj-line-numbers .moe-line-label {
+    -fx-font-size: 6pt;
 }
 .moe-editor-pane:bj-screen .moe-line-label, .moe-editor-pane:bj-printing:bj-line-numbers .moe-line-label {
     -fx-min-width: 24;
@@ -111,8 +122,8 @@
     -fx-caret-blink-rate: 0s;
 }
 .moe-background {
-    -fx-background-color: -fx-base;
-    /*-fx-background-image: url("../images/grey-diagonal.png");*/
+    -fx-background-color: DarkSlateGray;
+    -fx-background-image: url("../images/grey-diagonal.png");
 }
 
 .moe-code-error {
