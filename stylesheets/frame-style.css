@@ -67,8 +67,8 @@
 
     frame-canvas-empty: hsb(0, 0%, 100%);
     frame-canvas-non-empty: hsb(42, 5%, 97%);
-    frame:  hsb(42, 5%, 97%);              /* default frame colour */
-    frame-border: hsb(42, 5%, 97%);        /* default frame border (none, same as bg) */
+    frame: #2F4F4F;              /* default frame colour */
+    frame-border: #2F4F4F;        /* default frame border (none, same as bg) */
     frame-canvas-border: rgb(180,180,180); /* border for frame slots in frames */
     frame-canvas-border-java: rgb(210,210,210);
     frame-stack-border: hsb(10, 80%, 40%);
