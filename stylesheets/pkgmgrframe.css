@@ -2,12 +2,12 @@
     class-target: rgb(239, 204, 149);
     test-target: rgb(166, 191, 137);
     css-target: rgb(197, 205, 206);
-    window-background: rgb(229, 229, 229);
-    class-diagram: rgb(249,247,242);
-    object-bench: rgb(239,237,232);
-    codepad: rgb(239,237,232);
-    codepad-input: rgb(249,247,242);
-    pane-border-color: gray;
+    window-background: #31363b;
+    class-diagram: #232629;
+    object-bench: class-diagram;
+    codepad: class-diagram;
+    codepad-input: darkgray;
+    pane-border-color: white;
 }
 
 .pmf-root {
@@ -21,8 +21,8 @@
     -fx-background-color: window-background;
 }
 .split-pane > .split-pane-divider {
-   -fx-border-color:  transparent;
-   -fx-background-color: transparent;
+   -fx-border-color:  window-background;
+   -fx-background-color: window-background;
    -fx-padding: 2px 2px 2px 2px;
 }
 .pmf-central-pane {
@@ -40,10 +40,10 @@
 
 .triangle-arrow {
     -fx-cursor: hand;
-    -fx-fill: darkgray;
+    -fx-fill: white;
 }
 .triangle-arrow:hover {
-    -fx-fill: derive(darkgray, 20%);
+    -fx-fill: derive(darkgrey, 20%);
 }
 .pmf-triangle-foldout-wrapper:bj-hover-long {
     -fx-background-color: white;
@@ -80,12 +80,12 @@
 }
 .pmf-tools-test > .title > .text, .pmf-tools-team > .title > .text {
     /* Despite JavaFX documentation, we must use -fx-fill not -fx-text-fill: */
-    -fx-fill: gray;
+    -fx-fill: white;
     -fx-font-weight: bold;
 }
 .pmf-tools-test > .content, .pmf-tools-team > .content {
     -fx-border-width: 0;
-    -fx-background-color: transparent;
+    -fx-background-color: window-background;
 }
 .pmf-tools-test-recording-button {
     -fx-padding: 0 0 0 16px;
@@ -241,7 +241,7 @@
     -fx-background-color: codepad;
 }
 .codepad-row {
-    -fx-text-fill: black;
+    -fx-text-fill: white;
     -fx-wrap-text: false;
     -fx-background-color: codepad;
     -fx-padding: 4px 0px 0px 10px;
@@ -250,7 +250,7 @@
     -fx-background-color: lightblue;
 }
 .codepad-row:bj-codepad-error {
-    -fx-text-fill: hsb(355, 95%, 50%);
+    -fx-text-fill: red;
 
 }
 .codepad-row:bj-codepad-output {
@@ -263,11 +263,11 @@
 }
 
 .codepad .text-field {
-    /* This is the modena.css version:
+    /* This is the modena.css version: */
     -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
             linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
-       And here's our translation to use our background colour:*/
-    -fx-background-color: lightgray, codepad-input;
+       /*And here's our translation to use our background colour:*/
+    /*-fx-background-color: lightgray, codepad-input;*/
 }
 .codepad .text-field:focused {
     -fx-background-color: black, codepad-input;

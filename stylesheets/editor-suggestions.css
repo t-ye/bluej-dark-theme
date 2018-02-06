@@ -1,7 +1,7 @@
 /* Styles for suggestions (i.e. code completion) */
 
 .root {
-  suggestion-background: white;
+  suggestion-background: darkslategray;
 }
 
 .suggestion-list {
@@ -46,13 +46,13 @@
 }
 
 .suggestion:bj-suggestion-highlight {
-    -fx-background-color: hsb(180, 30%, 90%); 
+    -fx-background-color: grey; 
 }
 
 .suggestion-similar-heading {
     -fx-label-padding: 2 0 2 20;
     -fx-background-color: hsb(0, 0%, 95%);
-    -fx-text-fill: hsb(0, 0%, 40%);
+    -fx-text-fill: black;
     /* To get some padding: */
     -fx-border-color: transparent;
     -fx-border-width: 5 0 2 0;

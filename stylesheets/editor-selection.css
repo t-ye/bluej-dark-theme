@@ -9,5 +9,5 @@
     -fx-fill: transparent;
 }
 .selection-highlight-delete {
-    -fx-fill: rgba(255, 0, 0, 0.5);
+    -fx-fill: grey;
 }
